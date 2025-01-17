@@ -1,0 +1,25 @@
+.instagram-icon {
+    position: fixed;
+    bottom: 50px;
+    right: 8px;
+    z-index: 1000;
+}
+
+.instagram-icon a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.instagram-icon a img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+    .instagram-icon {
+        bottom: 160px;
+        right: 8px;
+        z-index: 1000;
+    }
+}

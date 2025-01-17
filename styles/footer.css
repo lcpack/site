@@ -1,0 +1,43 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    height: 40px;
+}
+
+.footer-content {
+    padding: 10px 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .footer-content p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        height: auto; /* Adjust height based on content */
+    }
+    
+    .footer-content {
+        width: 100%; /* Make each item take full width */
+        margin-bottom: 10px; /* Space between items vertically */
+        justify-content: center; /* Center items horizontally */
+    }
+
+    .footer-content p {
+        font-size: 14px;
+        margin: 0; /* Reset margin to ensure items stack neatly */
+    }
+}

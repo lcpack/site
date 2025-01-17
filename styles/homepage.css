@@ -1,0 +1,25 @@
+.homepage-icon {
+    position: fixed;
+    bottom: 177px;
+    right: 2px;    
+    z-index: 1000;
+}
+
+.homepage-icon a img {
+    width: 60px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.homepage-icon a img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+    .homepage-icon {
+        bottom: 285px;
+        right: 3px;
+        z-index: 1000;
+    }
+}

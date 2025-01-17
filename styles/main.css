@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0;
+    box-sizing: border-box;    
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+.hidden {
+    display: none;
+}
+
+.container.banner,
+.container-fluid.banner {
+    width: 100%;
+    background: linear-gradient(to right, #1cafc7, #016675);
+}
+
+.separator {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to right, #1cafc7, #016675);
+}
+
+.separator h2 {
+    color: #fafafa; /* Cor da letra */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+}
+
+
+.image-container {
+    width: 400px;
+    height: 400px;
+    padding: 3px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-content {
+    white-space: nowrap;
+    /* overflow-x: auto; */
+    width: 90%;
+    /* Define a largura para 90% da página */
+    margin: 0 auto;
+    /* Centraliza o conteúdo dentro da largura definida */
+}
+
+.container.section-categories {
+    width: 100%;
+}
+
+.section-categories .row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dropdown-toggle::after {
+    color: transparent !important;
+}
+
+
+/* Media Query para telas médias e grandes */
+@media (min-width: 768px) {
+    .menu-items {
+        flex-direction: row; /* Alinha os itens em linha */
+        justify-content: space-around;
+    }
+    
+    .menu-link {
+        margin: 0 1rem;
+    }
+}
